@@ -1,0 +1,21 @@
+// Crear una base de datos
+use("baticell_store");
+
+//Crear la colección y al menos un documento
+db.producto.insertOne(
+    {
+        name: "Huawei",
+        precio: 3000,
+        cantidad: 50,
+        color: [
+            "Rojo",
+            "Verder",
+            "Negro"
+        ]
+    }
+);
+
+// Lista el documento
+db.producto.find();
+
+// Revisar GitFlow como Plus
